@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Out Example</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 150px;
+      font-size: 18px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="box" onmouseout="changeColor()">Hover & Leave</div>
+
+<script>
+  function changeColor() {
+    document.getElementById("box").style.backgroundColor = "pink";
+    document.getElementById("box").innerText = "Mouse Out!";
+  }
+</script>
+
+</body>
+</html>
